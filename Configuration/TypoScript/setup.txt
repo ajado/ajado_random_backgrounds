@@ -1,0 +1,60 @@
+[globalVar = LIT:1 = {$plugin.tx_ajadorandombackgrounds.includejquerycore}]
+page.includeJS {
+	jquery = http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js
+	jquery.external = 1
+	jquery.forceOnTop = 1
+}
+[global]
+
+page.includeJS {
+	backstretch = EXT:ajado_random_backgrounds/Resources/Public/JavaScript/jquery.backstretch.min.js
+}
+
+plugin.tx_ajadorandombackgrounds {
+	view {
+		templateRootPath = {$plugin.tx_ajadorandombackgrounds.view.templateRootPath}
+		partialRootPath = {$plugin.tx_ajadorandombackgrounds.view.partialRootPath}
+		layoutRootPath = {$plugin.tx_ajadorandombackgrounds.view.layoutRootPath}
+	}
+	persistence {
+		storagePid = {$plugin.tx_ajadorandombackgrounds.persistence.storagePid}
+	}
+	features {
+		# uncomment the following line to enable the new Property Mapper.
+		# rewrittenPropertyMapper = 1
+	}
+}
+
+plugin.tx_ajadorandombackgrounds._CSS_DEFAULT_STYLE (
+	textarea.f3-form-error {
+		background-color:#FF9F9F;
+		border: 1px #FF0000 solid;
+	}
+
+	input.f3-form-error {
+		background-color:#FF9F9F;
+		border: 1px #FF0000 solid;
+	}
+
+	.tx-ajado-random-backgrounds table {
+		border-collapse:separate;
+		border-spacing:10px;
+	}
+
+	.tx-ajado-random-backgrounds table th {
+		font-weight:bold;
+	}
+
+	.tx-ajado-random-backgrounds table td {
+		vertical-align:top;
+	}
+
+	.typo3-messages .message-error {
+		color:red;
+	}
+
+	.typo3-messages .message-ok {
+		color:green;
+	}
+
+)

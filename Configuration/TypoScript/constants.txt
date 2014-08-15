@@ -1,0 +1,18 @@
+plugin.tx_ajadorandombackgrounds {
+
+	# cat=plugin.tx_ajadorandombackgrounds; type=boolean; label=Include jQuery core: Incluse jQuery core script
+	includejquerycore =
+	
+	view {
+		# cat=plugin.tx_ajadorandombackgrounds/file; type=string; label=Path to template root (FE)
+		templateRootPath = EXT:ajado_random_backgrounds/Resources/Private/Templates/
+		# cat=plugin.tx_ajadorandombackgrounds/file; type=string; label=Path to template partials (FE)
+		partialRootPath = EXT:ajado_random_backgrounds/Resources/Private/Partials/
+		# cat=plugin.tx_ajadorandombackgrounds/file; type=string; label=Path to template layouts (FE)
+		layoutRootPath = EXT:ajado_random_backgrounds/Resources/Private/Layouts/
+	}
+	persistence {
+		# cat=plugin.tx_ajadorandombackgrounds//a; type=string; label=Default storage PID
+		storagePid = 
+	}
+}

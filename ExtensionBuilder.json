@@ -1,0 +1,116 @@
+{
+    "modules": [
+        {
+            "config": {
+                "position": [
+                    85,
+                    136
+                ]
+            },
+            "name": "New Model Object",
+            "value": {
+                "actionGroup": {
+                    "_default0_list": false,
+                    "_default1_show": false,
+                    "_default2_new_create": false,
+                    "_default3_edit_update": false,
+                    "_default4_delete": false,
+                    "customActions": [
+                        "index"
+                    ]
+                },
+                "name": "BackgroundImage",
+                "objectsettings": {
+                    "addDeletedField": true,
+                    "addHiddenField": true,
+                    "addStarttimeEndtimeFields": true,
+                    "aggregateRoot": true,
+                    "categorizable": false,
+                    "description": "",
+                    "mapToTable": "",
+                    "parentClass": "",
+                    "sorting": false,
+                    "type": "Entity",
+                    "uid": "1105939896381"
+                },
+                "propertyGroup": {
+                    "properties": [
+                        {
+                            "allowedFileTypes": "",
+                            "maxItems": "1",
+                            "propertyDescription": "",
+                            "propertyIsExcludeField": true,
+                            "propertyIsRequired": false,
+                            "propertyName": "title",
+                            "propertyType": "String",
+                            "uid": "881113705483"
+                        },
+                        {
+                            "allowedFileTypes": "",
+                            "maxItems": "1",
+                            "propertyDescription": "",
+                            "propertyIsExcludeField": true,
+                            "propertyIsRequired": false,
+                            "propertyName": "image",
+                            "propertyType": "Image",
+                            "uid": "513241980224"
+                        }
+                    ]
+                },
+                "relationGroup": {
+                    "relations": [
+
+                    ]
+                }
+            }
+        }
+    ],
+    "properties": {
+        "backendModules": [
+
+        ],
+        "description": "",
+        "emConf": {
+            "category": "plugin",
+            "custom_category": "",
+            "dependsOn": "typo3 => 6.2\n",
+            "disableLocalization": false,
+            "disableVersioning": false,
+            "sourceLanguage": "en",
+            "state": "alpha",
+            "targetVersion": "6.2",
+            "version": "1.0.0"
+        },
+        "extensionKey": "ajado_random_backgrounds",
+        "name": "Ajado Random Backgrounds",
+        "originalExtensionKey": "ajado_random_backgrounds",
+        "persons": [
+            {
+                "company": "Ajado",
+                "email": "elvis@ajado.com",
+                "name": "Elvis Tavasja",
+                "role": "Developer"
+            }
+        ],
+        "plugins": [
+            {
+                "actions": {
+                    "controllerActionCombinations": "BackgroundImage => index",
+                    "noncacheableActions": "",
+                    "switchableActions": ""
+                },
+                "key": "ramdonbackgrounds",
+                "name": "Random Backgrounds"
+            }
+        ],
+        "vendorName": "Ajado"
+    },
+    "wires": [
+
+    ],
+    "log": {
+        "last_modified": "2014-08-13 06:55",
+        "extension_builder_version": "6.2.0",
+        "be_user": " (1)"
+    }
+}
